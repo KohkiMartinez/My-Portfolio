@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 import configparser
+import subprocess
 from tkinter import filedialog
 from tkinter import messagebox
 import os
@@ -128,6 +129,11 @@ def save_func():
             file.write(data)
 
 
+# Help menu
+def man_func():
+    subprocess.run(["start", "manual.txt"], shell=True)
+
+
 root = tk.Tk()
 
 # Frame
@@ -161,7 +167,7 @@ filemenu.add_command(label="Exit", command=lambda: root.destroy())
 # Help menu
 helpmenu = tk.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Help", menu=helpmenu)
-helpmenu.add_cascade(label="Manual")
+helpmenu.add_cascade(label="Manual", command= man_func)
 
 # sub window button
 fp_button = tk.Button(root, text="Fixed Phrase", command=sub_window)

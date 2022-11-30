@@ -1,0 +1,4 @@
+You can click "Programming", "Invesment", "Tools" button 
+to open appropriate files, apps and/or urls.
+
+If you use this app, you don't need to open each file one by one.
