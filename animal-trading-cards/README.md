@@ -1,7 +1,18 @@
-# Deprecated
-This repo is associated with ND004 v1, which is no longer offered in the market. 
-
 # animal-trading-cards
-Animal Trading Cards Project for Udacity's Web Nanodegree Programs.
 
+----------------------------------------
 
+[Software Name] Animal Trading Cards
+[System Requirement] Windows 10
+[Version] 1.00
+[Last updated] 11/06/2022
+
+----------------------------------------
+
+# Overview
+
+Three animal trading cards (Lion, Eagle, and Great white shark).
+
+# Instructions
+
+Open card.html (on google chrome is recommende), and three animal trading cards will be displyed on the scren.
