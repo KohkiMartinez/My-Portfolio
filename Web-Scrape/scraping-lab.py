@@ -8,9 +8,7 @@ response = requests.get(url)
 soup = BeautifulSoup(response.content, "html.parser")
 today = soup.find("div", attrs={"id": "on_this_day"})
 
-# +
 entries = today.find_all('li')
 
 for i, entry in enumerate(entries):
     print('%d: %s ' % (i + 1, entry.get_text()))
-# -
