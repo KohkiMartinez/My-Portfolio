@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+body a:hover {
+    color: #0bd;
+}
+.introduction {
+    font-size: 21px;
+}
+.resume {
+    margin: 2em 2em;
+    /* padding: 0.5em 1em; */
+    width: 730px;
+    border: rgb(9, 6, 162) solid ;
+    border-radius: 10px;
+}
+#page-header {
+    color: aliceblue;
+    background-color: rgb(9, 6, 162);
+    height: 180px;
+    /* margin: 1% 0; */
+    margin-bottom: 5%;
+    padding: .5% 4%;
+    border-radius: 5px 5px 0 0;
+
+}
+.contents {
+    display: flex;
+    padding: 0 4%;
+    justify-content: space-between;
+}
+.subject {
+    font-size: 18px;
+    font-weight: bold
+}
+.place {
+    font-size: 18px;
+}
+.duration {
+    font-size: small;
+    font-weight: 100;
+    color: rgb(218, 27, 27);
+}
+main {
+    width: 60%;
+    order: 2;
+}
+.certificate-logo {
+    position: absolute;
+    left: 570px;
+
+    width: 80px;
+    margin-right: 5px;
+}
+aside {
+    width: 35%;
+    order: 1;
+}
+aside li {
+    list-style: none;
+}
+.sub-title {
+    color: rgb(9, 6, 162);
+    font-size: 1.375rem;
+    border-bottom: 2px rgb(9, 6, 162) solid;
+    margin-bottom: 5px;
+}
+.information {
+    font-size: 18px;
+}
+.logo {
+    width: 15px;
+    margin-right: 5px;
+}
+.skills span{
+    background-color: rgb(154, 255, 255);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px 3px;
+}
+.skills {
+    font-size: 18px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects {
+    font-size: 18px;
+}
+.udacity,
+.work{
+    font-size: 15px;
+}
+/* CERTIFICATE.HTML */
+.udacity-certificate {
+    width: 1500px;
+}
+.back:hover {
+    color: #0bd;
+}
