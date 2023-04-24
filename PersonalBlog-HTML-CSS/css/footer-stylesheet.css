@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+
+/* FOOTER */
+footer {
+    grid-area: ft;
+    background-color: #e67a7a;
+    height: 180px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+footer p {
+    color: white;
+}
+
+
+.design-system :hover {
+    color: rgb(141, 235, 235);
+}

@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+/* BODY */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+#blog-post {
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px 20px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd hd"
+    "hd hd hd hd hd hd hd hd hd hd"
+    "hd hd hd hd hd hd hd hd hd hd"
+    "asd asd asd asd asd asd asd asd asd asd"
+    "asd asd asd asd asd asd asd asd asd asd"
+    "asd asd asd asd asd asd asd asd asd asd"
+    "asd asd asd asd asd asd asd asd asd asd"
+    "asd asd asd asd asd asd asd asd asd asd"
+    "asd asd asd asd asd asd asd asd asd asd"
+    "ft ft ft ft ft ft ft ft ft ft"
+    ;
+}
+
+
+/* HEADER */
+header {
+    grid-area: hd;
+    justify-content: space-between;
+}
+
+
+.logo {
+    margin-top: 10px;
+    width: 150px;
+}
+
+
+.page-header {
+    background-image: url(../images/header-pic2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.page-logo {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    color: yellow;
+}
+
+
+/* ASIDE */
+aside {
+    grid-area: asd;
+    margin: 20px auto;
+}
+
+
+.introduction {
+    width: 400px;
+    height: 500px;
+    border: yellow solid;
+    margin: 10px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+
+.introduction img {
+    max-width: 200px;
+    margin: 10px;
+}
+
+
+.introduction h3 {
+    font-size: 40px;
+}
+
+
+.profile {
+    display: flex;
+}
+
+
+.sns-logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+.sns-logo img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+
+.sub-title {
+    font-size: 1.4rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #e67a7a solid;
+}
+
+
+.sub-title,
+.sub-menu {
+    padding: 0 20px;
+    margin: 5px;
+}
+
+
+.sub-menu li {
+    border-bottom: 1px #432 solid;
+    margin: 20px;
+}
+
+
+.sub-menu a {
+    display: block;
+}
+
+
+.sub-menu :hover {
+    color: rgb(141, 235, 235);
+}
+
+
+aside li {
+    list-style: none;
+}
+
+
+/* FOOTER */
+footer {
+    grid-area: ft;
+    background-color: #e67a7a;
+    height: 180px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+footer p {
+    color: white;
+}
+
+
+.design-system :hover {
+    color: rgb(141, 235, 235);
+}
+
+
+/* FOR SMART PHONE */
+@media (max-width: 599px) {
+    /* BODY */
+    #blog-post {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px 0;
+        grid-template-areas:
+        "hd hd hd hd hd hd"
+        "asd asd asd asd asd asd"
+        "asd asd asd asd asd asd"
+        "ft ft ft ft ft ft"
+        ;
+    }
+
+
+    /* HEADER */
+    .logo {
+        margin-left: 10px;
+        width: 100px;
+    }
+
+
+    .title {
+        font-size: 30px
+    }
+
+
+    /* ASIDE */
+    aside {
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+
+    .profile {
+        display: flex;
+        flex-flow: column;
+    }
+
+
+    .profile img {
+        margin: 0 auto;
+    }
+
+
+    .introduction {
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+
+    .sns-logo img {
+        width: 80px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        height: 360px;
+    }
+}
+
+
+/* FOR TABLET */
+@media (min-width: 600px) and (max-width: 1199px) {
+    /* BODY */
+    #blog-post {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px 20px;
+        grid-template-areas:
+        "hd hd hd hd hd"
+        "asd asd asd asd asd"
+        "asd asd asd asd asd"
+        "asd asd asd asd asd"
+        "ft ft ft ft ft"
+        ;
+    }
+
+
+    /* HEADER */
+    .logo {
+        margin-left: 10px;
+    }
+
+
+    /* ASIDE */
+    .sub-title {
+        margin-left: 20px;
+    }
+
+
+    .sub-menu {
+        margin-left: 20px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        height: 380px;
+    }
+}
+
+
+/* FOR LAPTOP PC */
+@media (min-width: 1200px) and (max-width: 1600px) {
+    /* BODY */
+    #blog-post {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px 20px;
+        grid-template-areas:
+        "hd hd hd hd hd"
+        "asd asd asd asd asd"
+        "asd asd asd asd asd"
+        "ft ft ft ft ft"
+        ;
+    }
+
+
+    /* HEADER */
+    .logo {
+        margin-left: 10px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        height: 380px;
+    }
+}
