@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <!-- For loading Animation -->
+        <div id="loading">
+            <div class="loader"></div>
+        </div>
+
+        <div id="home">
+            <header class="page-header">
+                <div class="title">
+                    <h1>Travel App</h1> 
+                </div>
+            </header>
+
+            <div class="left_section">
+                <section>
+                    <div>
+                        <label class="input">Enter the City Name</label><br>
+                        <input id="city" type="text" name="input" value=""  placeholder="City Name">
+                    </div><br>
+                    <div>
+                        <label class="input">Start Date</label><br>
+                        <input type="date" id="startDate"><br>
+                        <label class="input">End Date</label><br>
+                        <input type="date" id="endDate"><br>
+                    </div><br>
+                    <form class="" onsubmit="return Client.handleSubmit(event)">
+                        <input class="button" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                    </form><br>
+                </section>
+                <div id="tripInfo">
+                    <div id="myTrip" style="font-size: 30px;"></div><br>
+                    <div id="departing" style="font-size: 30px;"></div><br>
+                    <div id="totalDay" style="font-size: 30px;"></div>
+                </div>
+            </div>
+
+            <right_section class="right_section">
+                <output2>
+                    <div class="tab">
+                        <ul class="tab_menu">
+                            <li class="tab_menu-item is-active" data-tab="01">Photos</li>
+                            <li class="tab_menu-item" data-tab="02">Weather</li>
+                        </ul>
+
+                        <div class="tab-panel">
+                            <div class="tab_panel-box tab_panel-box001 is-shown" data-panel="01">
+                                <p class="tab_panel-text">
+                                    <div id="photo_data">
+
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="tab_panel-box tab_panel-box002" data-panel="02">
+                                <p class="tab_panel-text">
+                                    <div id="weather_data">
+                                        
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </output2>
+            </right_section>
+        </div>
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            };
+        </script>
+    </body>
+</html>

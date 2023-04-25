@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+
+/* body */
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+
+#home {
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd hd"
+    "hd hd hd hd hd hd hd hd hd hd"
+    "l l l l l r r r r r"
+    "l l l l l r r r r r"
+    "l l l l l r r r r r"
+    "l l l l l r r r r r"
+    "l l l l l r r r r r"
+    "l l l l l r r r r r"
+    "l l l l l r r r r r"
+    "l l l l l r r r r r"
+    ;
+    margin: 30px;
+}
+
+
+header {
+    display: flex;
+    grid-area: hd;
+    align-content: center;
+}
+
+
+.title {
+    font-size: 30px;
+    color: black;
+    margin-left: 30px;
+    
+}
+
+
+/* left section */
+.left_section {
+    background-color: rgb(203, 244, 207);
+    grid-area: l;
+    padding: 30px;
+}
+
+
+.input {
+    font-size: 30px;
+}
+
+
+#city {
+    height: 40px;
+    font-size: 40px;
+    color: #070606;
+    width: 100%;
+}
+
+
+#city:focus {
+    border: 4px solid #53d71b;
+    z-index: 10;
+    outline: 0;
+}
+
+
+#startDate {
+    height: 50px;
+    font-size: 40px;
+}
+
+
+#startDate:focus {
+    border: 4px solid #53d71b;
+    z-index: 10;
+    outline: 0;
+}
+
+
+#endDate {
+    height: 50px;
+    font-size: 40px;
+}
+
+
+#endDate:focus {
+    border: 4px solid #53d71b;
+    z-index: 10;
+    outline: 0;
+}
+
+
+.button {
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    color: #53d71b;
+    background-color: #070606;
+}
+
+
+.button:hover {
+    border-radius: 10px;
+    color: #0b0b0b;
+    background: #53d71b;
+}
+
+
+#tripInfo {
+    background-color: aliceblue;
+    margin: 5px;
+}
+
+
+/* right section */
+.right_section {
+    background-color: rgb(203, 244, 207);
+    grid-area: r;
+    padding: 30px;
+}
+
+
+#photo_data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#weather_data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+// For Smart Phone and Tablet
+$small: 860px;
+@media screen and (max-width: $small) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        justify-content: space-between;
+    }
+
+
+    .title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .left_section {
+        padding: 10px;
+    }
+
+
+    .right_section {
+        padding: 10px;
+    }
+
+
+    #startDate {
+        width: 100%;
+    }
+
+
+    #endDate {
+        width: 100%;
+    }
+}

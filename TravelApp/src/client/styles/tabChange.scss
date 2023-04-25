@@ -1,0 +1,55 @@
+.tab_menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.tab_menu-item {
+    list-style: none;
+    width: 200px;
+    padding: 8px 5px;
+    text-align: center;
+    margin-right: 6px;
+    background-color: #cdcdcd;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.tab_menu-item:last-of-type {
+    margin-right: 0;
+}
+
+
+.tab_menu-item.is-active {
+    background-color: rgb(48, 172, 249);
+    color: #ffffff;
+    padding: 12px 5px;
+}
+
+
+.tab_panel-box {
+    min-height: 600px;
+    padding: 10px 30px;
+}
+
+
+.tab_panel-box001 {
+    background-color: rgb(203, 250, 250);
+    display: none;
+}
+
+
+.tab_panel-box002 {
+    background-color: rgb(251, 235, 247);
+    display: none;
+}
+
+
+.tab_panel-box.is-shown {
+    display: block;
+}
