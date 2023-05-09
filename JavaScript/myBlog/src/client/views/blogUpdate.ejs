@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Update Blog Page</title>
+        <%- include("./head"); %>
+    </head>
+
+    <body>
+        <%- include("./header"); %>
+        <main>
+            <form action="/blog/update/<%= singleBlog._id %>" method="POST">
+                <label for="title">Titel</label>
+                <input type="text" name="title" value="<%= singleBlog.title %>">
+                <label for="date">Date</label>
+                <input type="text" name="date" value="<%= singleBlog.date %>">
+                <label for="summary">Summary</label>
+                <input type="text" name="summary" value="<%= singleBlog.summary %>">
+                <label for="image">Image</label>
+                <Input type="text" name="image" value="<%= singleBlog.image %>">
+                <label for="textBody">TextBody</label>
+                <textarea name="textBody" rows="15"><%= singleBlog.textBody %></textarea>
+                </br>
+                <button type="submit">Apply Changes</button>
+            </form>
+        </main>
+        <%- include("./footer"); %>
+    </body>
+</html>

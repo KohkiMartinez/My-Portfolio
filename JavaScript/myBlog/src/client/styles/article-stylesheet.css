@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+
+/* ARTICLE */
+article {
+    grid-area: atcl;
+    margin-left: 30px;
+}
+
+
+article .post-title {
+    text-align: center;
+    font-size: 60px;
+}
+
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.box {
+    position: relative;
+    background-color: #fffce6;
+    border: #8edae5 solid;
+    margin: 20px;
+    padding: 20px 20px;
+    width: 500px;
+    height: 450px;
+    text-align: center;
+    box-shadow: 7px 7px #6fbdc9;
+}
+
+
+.box img {
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+
+.date {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 15px;
+    color: rgb(177, 174, 174);
+}
+
+
+.read-more {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 3px 10px;
+}
+
+
+.read-more :hover{
+    color: rgb(74, 189, 189);
+}
