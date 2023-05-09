@@ -15,4 +15,4 @@ Practising of using HTML and CSS to create three animal trading cards (Lion, Eag
 
 # Instructions
 
-Open card.html (on google chrome is recommende), and three animal trading cards will be displyed on the screen.
+Open card.html (on google chrome is recommended), and three animal trading cards will be displyed on the screen.
