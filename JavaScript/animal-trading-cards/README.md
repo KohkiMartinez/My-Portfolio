@@ -2,10 +2,10 @@
 
 ----------------------------------------
 
-[Software Name] Animal Trading Cards
-[System Requirement] Windows 10
-[Version] 1.00
-[Last updated] 11/06/2022
+[Software Name] Animal Trading Cards  
+[System Requirement] Windows 10  
+[Version] 1.00  
+[Last updated] 9/05/2023  
 
 ----------------------------------------
 
