@@ -11,8 +11,8 @@
 
 # Overview
 
-Three animal trading cards (Lion, Eagle, and Great white shark).
+Practising of using HTML and CSS to create three animal trading cards (Lion, Eagle, and Great white shark).
 
 # Instructions
 
-Open card.html (on google chrome is recommende), and three animal trading cards will be displyed on the scren.
+Open card.html (on google chrome is recommende), and three animal trading cards will be displyed on the screen.
