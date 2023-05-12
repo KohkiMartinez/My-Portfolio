@@ -1,7 +1,22 @@
 # Travel App
+----------------------------------------
 
+[Software Name] Travel App 
+[System Requirement] Windows 10  
+[Version] 1.00  
+[Last updated] 9/05/2023
+
+----------------------------------------
 ## About this project
 This project is to build out a travel app that obtains a desired trip location & date from the user, and displays weather and images of the location using information obtained from external APIs.
+![Travel App image](images/image230512_163044.png)
+
+## Skills
+- node.js
+- express
+- webpack
+- babel
+- jest(test)
 
 ## How to Use the App
 
