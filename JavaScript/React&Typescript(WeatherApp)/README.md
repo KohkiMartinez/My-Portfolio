@@ -11,5 +11,5 @@
 # Overview
 An easy Weather App with React and TypeScript.
 
-Just Type and "Get Weather" and get weather data of city you typed.
+Type city name and "Get Weather" to get weather data of city you typed.
 ![WeatherApp image](images/image230512_155116.png)
