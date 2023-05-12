@@ -1,5 +1,7 @@
 "use strict";
 
+require("dotenv").config();
+
 const express = require("express"),
     app = express(),
     path = require("path"),
@@ -10,7 +12,7 @@ const express = require("express"),
 app.use(express.urlencoded({ extended: true }));
 
 // Connecting to MongoDB
-mongoose.connect("mongodb+srv://mynewownecbusiness:rpUzrx1ZKQKDeSIX@cluster0.ohsgxum.mongodb.net/blogUserDatabase?retryWrites=true&w=majority")
+mongoose.connect(process.env.mongooseURL)
     .then(() => {
         console.log("SUCCESS: Connected to MongoDB");
     })
