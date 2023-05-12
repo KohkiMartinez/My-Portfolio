@@ -2,7 +2,7 @@
 
 ----------------------------------------
 
-[Software Name] myBlog
+[Software Name] myBlog  
 [System Requirement] Windows 10  
 [Version] 1.00  
 [Last updated] 12/05/2023  
