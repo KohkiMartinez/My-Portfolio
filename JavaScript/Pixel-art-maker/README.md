@@ -14,7 +14,7 @@
 A simple pixel art maker. 
 
 # Instructions
-
+![PixelArtMaker2 image](images/image230512_153527.png)
 To get started, open index.html (on google chrome is recommended).
 
 Choose the grid height and width, then click "Submit".
