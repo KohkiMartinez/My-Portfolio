@@ -13,7 +13,7 @@ run ```npm install``` to install all the packages you need to run this app.
 Then, Run ```npm run build-prod``` in terminal.
 (You will get a dist folder in your repository)
 
-Open http://localhost:8081 
+Open [http://localhost:8081](http://localhost:8081/) 
 
 ## Dependencies
 
