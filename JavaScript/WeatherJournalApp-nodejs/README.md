@@ -1,8 +1,15 @@
-# Weather-Journal App Project
+# Weather-Journal App
+----------------------------------------
 
+[Software Name] Weather-Journal App  
+[System Requirement] Windows 10  
+[Version] 1.00  
+[Last updated] 9/05/2023
+
+----------------------------------------
 ## Overview
 This project is to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
-
+![Weather-Journal App image](images/image230512_163921.png)
 ## How to use the App
 1. Run ```npm start``` to start the server.
 
