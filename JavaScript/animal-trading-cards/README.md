@@ -12,6 +12,7 @@
 # Overview
 
 Practising of using HTML and CSS to create three animal trading cards (Lion, Eagle, and Great white shark).
+![animal-trading-cards image](images/image230512_164425.png)
 
 # Instructions
 
