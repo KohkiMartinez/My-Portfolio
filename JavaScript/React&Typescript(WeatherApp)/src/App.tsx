@@ -4,6 +4,7 @@ import Form from "./components/Form";
 import Results from "./components/Results";
 import Loading from "./components/Loading";
 import './App.css';
+require("dotenv").config();
 
 type ResultsStateType = {
   country: string;
@@ -27,7 +28,7 @@ function App() {
   const getWeather = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       setLoading(true);
-      fetch(`https://api.weatherapi.com/v1/current.json?key=d17f707bccc44de799a82506230704&q=${city}&aqi=no`)
+      fetch(`https://api.weatherapi.com/v1/current.json?key=${process.env.weatherapikey}&q=${city}&aqi=no`)
       .then(res => res.json())
       .then(data => {
         setResults({
