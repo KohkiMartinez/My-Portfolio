@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Index Page </title>
+        <%- include("./head"); %>
+    </head>
+
+    <body>
+        <div id="home">
+
+            <%- include("./header"); %>
+
+            <article>
+                <h2 class="post-title">Blog</h2>
+                <div class="boxes">
+                    <% allBlogs.forEach((blog) => { %>
+                        <div class="box">
+                            <div>
+                                <img src="../images<%= blog.image %>" alt="blog-image"/>
+                            </div>
+                            <h4><%= blog.title %></h4>
+                            <div>
+                                <p><%= blog.summary %></p>
+                            </div>
+                            <div class="read-more">
+                                <a href="blog/<%= blog._id %>"><u>Read More...</u></a>
+                            </div>
+                            <div class="date">date here</div>
+                        </div>
+                    <% }) %> 
+                </div>
+                <div class="button">
+                    <% if(session !== undefined){%>
+                    <a href="/blog/create" class="create-button">Create Blog</a>
+                    <%}%>
+                </div>
+            </article>
+
+            <aside>
+                <div class="introduction">
+                    <h3>About Author</h3>
+                    <div class="profile">
+                        <img src="../images/profile-pic.jpg" alt="profile-pic">
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                In aliquam sem fringilla ut morbi tincidunt augue interdum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sns-logo">
+                        <div>
+                            <a href="https://www.facebook.com/">
+                                <img src="images/facebook.png" alt="facebook-logo">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/?lang=eg">
+                                <img src="images/twitter.png" alt="twitter-logo">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/">
+                                <img src="images/github.png" alt="github-logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="sub-title">Category</h3>
+                <ul class="sub-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="">Archive</a></li>
+                    <li><a href="">Event</a></li>
+                    <li><a href="">Q&A</a></li>
+                    <li><a href="">Design System</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </aside>
+
+            <%- include("./footer"); %>
+        </div>
+    </body>
+</html>
