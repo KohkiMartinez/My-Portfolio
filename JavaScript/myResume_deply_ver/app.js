@@ -14,159 +14,155 @@ const html = `
         <title>Kohki Martinez Resume</title>
         <link rel="icon" type="image/png" href="images/resume.jpg">
 
-        <!-- CSS -->
-        <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link href="https//fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet"> -->
         <style>
             html {
-    font-size: 100%;
-}
+                font-size: 100%;
+            }
 
 
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 1.7;
-    color: #432;
-}
+            body {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                line-height: 1.7;
+                color: #432;
+            }
 
 
-body a:hover {
-    color: #0bd;
-}
+            body a:hover {
+                color: #0bd;
+            }
 
 
-.introduction {
-    font-size: 22px;
-}
+            .introduction {
+                font-size: 22px;
+            }
 
 
-.resume {
-    margin: 2em 2em;
-    /* padding: 0.5em 1em; */
-    width: 1230px;
-    border: rgb(9, 6, 162) solid ;
-    border-radius: 10px;
-}
+            .resume {
+                margin: 2em 2em;
+                /* padding: 0.5em 1em; */
+                width: 1230px;
+                border: rgb(9, 6, 162) solid ;
+                border-radius: 10px;
+            }
 
 
-#page-header {
-    color: aliceblue;
-    background-color: rgb(9, 6, 162);
-    height: 260px;
-    /* margin: 1% 0; */
-    margin-bottom: 5%;
-    padding: .5% 4%;
-    border-radius: 5px 5px 0 0;
-}
+            #page-header {
+                color: aliceblue;
+                background-color: rgb(9, 6, 162);
+                height: 260px;
+                /* margin: 1% 0; */
+                margin-bottom: 5%;
+                padding: .5% 4%;
+                border-radius: 5px 5px 0 0;
+            }
 
 
-.contents {
-    display: flex;
-    padding: 0 4%;
-    justify-content: space-between;
-}
+            .contents {
+                display: flex;
+                padding: 0 4%;
+                justify-content: space-between;
+            }
 
 
-.subject {
-    font-size: 18px;
-    font-weight: bold
-}
+            .subject {
+                font-size: 18px;
+                font-weight: bold
+            }
 
 
-.place {
-    font-size: 18px;
-}
+            .place {
+                font-size: 18px;
+            }
 
 
-.duration {
-    font-size: small;
-    font-weight: 100;
-    color: rgb(218, 27, 27);
-}
+            .duration {
+                font-size: small;
+                font-weight: 100;
+                color: rgb(218, 27, 27);
+            }
 
 
-main {
-    width: 60%;
-    order: 2;
-}
+            main {
+                width: 60%;
+                order: 2;
+            }
 
 
-.certificate-logo {
-    position: absolute;
-    left: 370px;
+            .certificate-logo {
+                position: absolute;
+                left: 370px;
 
-    width: 80px;
-    margin-right: 5px;
-}
-
-
-aside {
-    width: 35%;
-    order: 1;
-}
+                width: 80px;
+                margin-right: 5px;
+            }
 
 
-aside li {
-    list-style: none;
-}
+            aside {
+                width: 35%;
+                order: 1;
+            }
 
 
-.sub-title {
-    color: rgb(9, 6, 162);
-    font-size: 2rem;
-    border-bottom: 2px rgb(9, 6, 162) solid;
-    margin-bottom: 5px;
-}
+            aside li {
+                list-style: none;
+            }
 
 
-.information {
-    font-size: 18px;
-}
+            .sub-title {
+                color: rgb(9, 6, 162);
+                font-size: 2rem;
+                border-bottom: 2px rgb(9, 6, 162) solid;
+                margin-bottom: 5px;
+            }
 
 
-.logo {
-    width: 15px;
-    margin-right: 5px;
-}
+            .information {
+                font-size: 18px;
+            }
 
 
-.skills span{
-    background-color: rgb(154, 255, 255);
-    border-radius: 5px;
-    margin: 5px;
-    padding: 3px 3px;
-}
+            .logo {
+                width: 15px;
+                margin-right: 5px;
+            }
 
 
-.skills {
-    font-size: 24px;
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-}
+            .skills span{
+                background-color: rgb(154, 255, 255);
+                border-radius: 5px;
+                margin: 5px;
+                padding: 3px 3px;
+            }
 
 
-.projects {
-    font-size: 18px;
-}
+            .skills {
+                font-size: 24px;
+                width: 400px;
+                display: flex;
+                flex-wrap: wrap;
+            }
 
 
-.udacity,
-.work{
-    font-size: 15px;
-}
+            .projects {
+                font-size: 18px;
+            }
 
 
-/* CERTIFICATE.HTML */
-.udacity-certificate {
-    width: 1500px;
-}
+            .udacity,
+            .work{
+                font-size: 15px;
+            }
 
 
-.back:hover {
-    color: #0bd;
-}
+            /* CERTIFICATE.HTML */
+            .udacity-certificate {
+                width: 1500px;
+            }
+
+
+            .back:hover {
+                color: #0bd;
+            }
         </style>
     </head>
 
