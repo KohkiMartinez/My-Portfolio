@@ -26,19 +26,41 @@ const getProductInfo = async () => {
     await page.goto(url);
 
     // Scrolls down to bottom of the wishlist (until get an element of endOfListMarker)
-    await page.evaluate(async () => {
-        const distance = 500;
-        const delay = 100;
+    // Cannot use this code anymore because Amazon eliminated id name called "endOfListMarker"
+    // await page.evaluate(async () => {
+    //     const distance = 500;
+    //     const delay = 100;
 
-        while (!document.querySelector("#endOfListMarker")) {
-            document.scrollingElement.scrollBy(0, distance);
-            await new Promise(resolve => {
-                setTimeout(resolve, delay);
-            });
-        };
-    });
+    //     while (!document.querySelector("#endOfListMarker")) {
+    //         document.scrollingElement.scrollBy(0, distance);
+    //         await new Promise(resolve => {
+    //             setTimeout(resolve, delay);
+    //         });
+    //     };
+    // });
 
-    await page.waitForSelector("#endOfListMarker")
+    // await page.waitForSelector("#endOfListMarker");
+
+    // instead of scrollign down until "endOfListMarker", just scroll down to bottom of the page
+    async function autoScroll(page) {
+      await page.evaluate(async () => {
+        await new Promise((resolve) => {
+          let totalHeight = 0;
+          const distance = 10;
+          const timer = setInterval(() => {
+            const scrollHeight = document.body.scrollHeight;
+            window.scrollBy(0, distance);
+            totalHeight += distance;
+
+            if (totalHeight >= scrollHeight - window.innerHeight) {
+              clearInteval(timer);
+              resolve();
+            }
+          }, 100);
+        });
+      });
+    };
+
 
     // Scrapes webpage with puppeteer
     const getData = await page.evaluate(() => {
@@ -84,7 +106,9 @@ const getProductInfo = async () => {
 
     await browser.close();
 
-    setInterval(getProductInfo, 20000);
+    // Reapeat getProductInfo every 12 hours
+    const time = 1000 * 60 * 60 * 12
+    setTimeout(getProductInfo, time);
 };
 
 getProductInfo();
