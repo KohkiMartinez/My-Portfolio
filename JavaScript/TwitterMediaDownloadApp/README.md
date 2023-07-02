@@ -11,9 +11,9 @@
 This app let you download any videos on Twitter.
 What you need to do is just copy the url of video that you want to download and paste it and hit Download.
 There are top three most downloaded videos.
-You can find top three videos Open [https://github.com/KohkiMartinez/My-Portfolio/tree/master/AWS_lambda/VideoUrlsToTwitterDownloadApp](here)
+You can find top three videos [here](https://github.com/KohkiMartinez/My-Portfolio/tree/master/AWS_lambda/VideoUrlsToTwitterDownloadApp/ "AWS lambda function")
 You can get them by just clicking the each button.
-Open [https://twittermediadownloadapp.onrender.com](Twitter Media Download App) 
+Open [Twitter Media Download App](https://twittermediadownloadapp.onrender.com) 
 
 Because the App is deployed to render.com free plan which has low cpu and low ram, so it will take about 40 - 50 seconds to get your videos.
 By deploying it to standard, download will finish in just 5 seconds!!
@@ -25,7 +25,7 @@ By deploying it to standard, download will finish in just 5 seconds!!
 - express
 - MongoDB
 - puppeteer
-- [https://github.com/KohkiMartinez/My-Portfolio/tree/master/AWS_lambda](AWS lambda)
+- [AWS lambda](https://github.com/KohkiMartinez/My-Portfolio/tree/master/AWS_lambda)
 - render.com
 
 ## Dependencies
