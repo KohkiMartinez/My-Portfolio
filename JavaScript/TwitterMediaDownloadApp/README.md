@@ -11,7 +11,7 @@
 This app allows you to download any videos from Twitter. 
 All you need to do is copy the URL of the video you want to download, paste it, and click the "Download" button.
 
-There are top three most downloaded videos.
+These are the top three most downloaded videos.
 
 You can find top three videos [here.](https://github.com/KohkiMartinez/My-Portfolio/blob/master/AWS_lambda/VideoUrlsToTwitterDownloadApp/main.py/ "AWS lambda function")
 
