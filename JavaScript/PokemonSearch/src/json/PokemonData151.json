@@ -1,0 +1,1188 @@
+[
+    {
+        "No": "0001",
+        "name_jp": "フシギダネ",
+        "name_eg": "Bulbasaur"
+    },
+    {
+        "No": "0002",
+        "name_jp": "フシギソウ",
+        "name_eg": "Ivysaur"
+    },
+    {
+        "No": "0003",
+        "name_jp": "フシギバナ",
+        "name_eg": "Venusaur",
+        "varieties": [
+            "10033",
+            "10195",
+            "Venusaur"
+        ],
+        "varietyNames": [
+            "フシギバナ",
+            "メガシンカ",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0004",
+        "name_jp": "ヒトカゲ",
+        "name_eg": "Charmander"
+    },
+    {
+        "No": "0005",
+        "name_jp": "リザード",
+        "name_eg": "Charmeleon"
+    },
+    {
+        "No": "0006",
+        "name_jp": "リザードン",
+        "name_eg": "Charizard",
+        "varieties": [
+            "10034",
+            "10035",
+            "10196",
+            "Charizard"
+        ],
+        "varietyNames": [
+            "リザードン",
+            "メガシンカX",
+            "メガシンカY",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0007",
+        "name_jp": "ゼニガメ",
+        "name_eg": "Squirtle"
+    },
+    {
+        "No": "0008",
+        "name_jp": "カメール",
+        "name_eg": "Wartortle"
+    },
+    {
+        "No": "0009",
+        "name_jp": "カメックス",
+        "name_eg": "Blastoise",
+        "varieties": [
+            "10036",
+            "10197",
+            "Blastoise"
+        ],
+        "varietyNames": [
+            "カメックス",
+            "メガシンカ",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0010",
+        "name_jp": "キャタピー",
+        "name_eg": "Caterpie"
+    },
+    {
+        "No": "0011",
+        "name_jp": "トランセル",
+        "name_eg": "Metapod"
+    },
+    {
+        "No": "0012",
+        "name_jp": "バタフリー",
+        "name_eg": "Butterfree",
+        "varieties": [
+            "10198",
+            "Butterfree"
+        ],
+        "varietyNames": [
+            "バタフリー",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0013",
+        "name_jp": "ビードル",
+        "name_eg": "Weedle"
+    },
+    {
+        "No": "0014",
+        "name_jp": "コクーン",
+        "name_eg": "Kakuna"
+    },
+    {
+        "No": "0015",
+        "name_jp": "スピアー",
+        "name_eg": "Beedrill",
+        "varieties": [
+            "10090",
+            "Beedrill"
+        ],
+        "varietyNames": [
+            "スピアー",
+            "メガシンカ"
+        ]
+    },
+    {
+        "No": "0016",
+        "name_jp": "ポッポ",
+        "name_eg": "Pidgey"
+    },
+    {
+        "No": "0017",
+        "name_jp": "ピジョン",
+        "name_eg": "Pidgeotto"
+    },
+    {
+        "No": "0018",
+        "name_jp": "ピジョット",
+        "name_eg": "Pidgeot",
+        "varieties": [
+            "10073",
+            "Pidgeot"
+        ],
+        "varietyNames": [
+            "ピジョット",
+            "メガシンカ"
+        ]
+    },
+    {
+        "No": "0019",
+        "name_jp": "コラッタ",
+        "name_eg": "Rattata",
+        "varieties": [
+            "10091",
+            "Rattata"
+        ],
+        "varietyNames": [
+            "コラッタ",
+            "アローラ"
+        ]
+
+    },
+    {
+        "No": "0020",
+        "name_jp": "ラッタ",
+        "name_eg": "Raticate",
+        "varieties": [
+            "10092",
+            "Raticate"
+        ],
+        "varietyNames": [
+            "ラッタ",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0021",
+        "name_jp": "オニスズメ",
+        "name_eg": "Spearow"
+    },
+    {
+        "No": "0022",
+        "name_jp": "オニドリル",
+        "name_eg": "Fearow"
+    },
+    {
+        "No": "0023",
+        "name_jp": "アーボ",
+        "name_eg": "Ekans"
+    },
+    {
+        "No": "0024",
+        "name_jp": "アーボック",
+        "name_eg": "Arbok"
+    },
+    {
+        "No": "0025",
+        "name_jp": "ピカチュウ",
+        "name_eg": "Pikachu"
+    },
+    {
+        "No": "0026",
+        "name_jp": "ライチュウ",
+        "name_eg": "Raichu",
+        "varieties": [
+            "10100",
+            "Raichu"
+        ],
+        "varietyNames": [
+            "ライチュウ",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0027",
+        "name_jp": "サンド",
+        "name_eg": "Sandshrew",
+        "varieties": [
+            "10101",
+            "Sandshrew"
+        ],
+        "varietyNames": [
+            "サンド",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0028",
+        "name_jp": "サンドパン",
+        "name_eg": "Sandslash",
+        "varieties": [
+            "10102",
+            "Sandslash"
+        ],
+        "varietyNames": [
+            "サンドパン",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0029",
+        "name_jp": "ニドラン♀",
+        "name_eg": "Nidoran-f"
+    },
+    {
+        "No": "0030",
+        "name_jp": "ニドリーナ",
+        "name_eg": "Nidorina"
+    },
+    {
+        "No": "0031",
+        "name_jp": "ニドクイン",
+        "name_eg": "Nidoqueen"
+    },
+    {
+        "No": "0032",
+        "name_jp": "ニドラン♂",
+        "name_eg": "Nidoran-m"
+    },
+    {
+        "No": "0033",
+        "name_jp": "ニドリーノ",
+        "name_eg": "Nidorino"
+    },
+    {
+        "No": "0034",
+        "name_jp": "ニドキング",
+        "name_eg": "Nidoking"
+    },
+    {
+        "No": "0035",
+        "name_jp": "ピッピ",
+        "name_eg": "Clefairy"
+    },
+    {
+        "No": "0036",
+        "name_jp": "ピクシー",
+        "name_eg": "Clefable"
+    },
+    {
+        "No": "0037",
+        "name_jp": "ロコン",
+        "name_eg": "Vulpix",
+        "varieties": [
+            "10103",
+            "Vulpix"
+        ],
+        "varietyNames": [
+            "ロコン",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0038",
+        "name_jp": "キュウコン",
+        "name_eg": "Ninetales",
+        "varieties": [
+            "10104",
+            "Ninetales"
+        ],
+        "varietyNames": [
+            "キュウコン",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0039",
+        "name_jp": "プリン",
+        "name_eg": "Jigglypuff"
+    },
+    {
+        "No": "0040",
+        "name_jp": "プクリン",
+        "name_eg": "Wigglytuff"
+    },
+    {
+        "No": "0041",
+        "name_jp": "ズバット",
+        "name_eg": "Zubat"
+    },
+    {
+        "No": "0042",
+        "name_jp": "ゴルバット",
+        "name_eg": "Golbat"
+    },
+    {
+        "No": "0043",
+        "name_jp": "ナゾノクサ",
+        "name_eg": "Oddish"
+    },
+    {
+        "No": "0044",
+        "name_jp": "クサイハナ",
+        "name_eg": "Gloom"
+    },
+    {
+        "No": "0045",
+        "name_jp": "ラフレシア",
+        "name_eg": "Vileplume"
+    },
+    {
+        "No": "0046",
+        "name_jp": "パラス",
+        "name_eg": "Paras"
+    },
+    {
+        "No": "0047",
+        "name_jp": "パラセクト",
+        "name_eg": "Parasect"
+    },
+    {
+        "No": "0048",
+        "name_jp": "コンパン",
+        "name_eg": "Venonat"
+    },
+    {
+        "No": "0049",
+        "name_jp": "モルフォン",
+        "name_eg": "Venomoth"
+    },
+    {
+        "No": "0050",
+        "name_jp": "ディグダ",
+        "name_eg": "Diglett",
+        "varieties": [
+            "10105",
+            "Diglett"
+        ],
+        "varietyNames": [
+            "ディグダ",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0051",
+        "name_jp": "ダグトリオ",
+        "name_eg": "Dugtrio",
+        "varieties": [
+            "10106",
+            "Dugtrio"
+        ],
+        "varietyNames": [
+            "ダグトリオ",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0052",
+        "name_jp": "ニャース",
+        "name_eg": "Meowth",
+        "varieties": [
+            "10107",
+            "10161",
+            "10200",
+            "Meowth"
+        ],
+        "varietyNames": [
+            "ニャース",
+            "アローラ",
+            "ガラル",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0053",
+        "name_jp": "ペルシアン",
+        "name_eg": "Persian",
+        "varieties": [
+            "10108",
+            "Persian"
+        ],
+        "varietyNames": [
+            "ペルシアン",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0054",
+        "name_jp": "コダック",
+        "name_eg": "Psyduck"
+    },
+    {
+        "No": "0055",
+        "name_jp": "ゴルダック",
+        "name_eg": "Golduck"
+    },
+    {
+        "No": "0056",
+        "name_jp": "マンキー",
+        "name_eg": "Mankey"
+    },
+    {
+        "No": "0057",
+        "name_jp": "オコリザル",
+        "name_eg": "Primeape"
+    },
+    {
+        "No": "0058",
+        "name_jp": "ガーディ",
+        "name_eg": "Growlithe",
+        "varieties": [
+            "10229",
+            "Growlithe"
+        ],
+        "varietyNames": [
+            "ガーディ",
+            "ヒスイ"
+        ]
+    },
+    {
+        "No": "0059",
+        "name_jp": "ウインディ",
+        "name_eg": "Arcanine",
+        "varieties": [
+            "10230",
+            "Arcanine"
+        ],
+        "varietyNames": [
+            "ウインディ",
+            "ヒスイ"
+        ]
+    },
+    {
+        "No": "0060",
+        "name_jp": "ニョロモ",
+        "name_eg": "Poliwag"
+    },
+    {
+        "No": "0061",
+        "name_jp": "ニョロゾ",
+        "name_eg": "Poliwhirl"
+    },
+    {
+        "No": "0062",
+        "name_jp": "ニョロボン",
+        "name_eg": "Poliwrath"
+    },
+    {
+        "No": "0063",
+        "name_jp": "ケーシィ",
+        "name_eg": "Abra"
+    },
+    {
+        "No": "0064",
+        "name_jp": "ユンゲラー",
+        "name_eg": "Kadabra"
+    },
+    {
+        "No": "0065",
+        "name_jp": "フーディン",
+        "name_eg": "Alakazam",
+        "varieties": [
+            "10037",
+            "Alakazam"
+        ],
+        "varietyNames": [
+            "フーディン",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0066",
+        "name_jp": "ワンリキー",
+        "name_eg": "Machop"
+    },
+    {
+        "No": "0067",
+        "name_jp": "ゴーリキー",
+        "name_eg": "Machoke"
+    },
+    {
+        "No": "0068",
+        "name_jp": "カイリキー",
+        "name_eg": "Machamp",
+        "varieties": [
+            "10201",
+            "Machamp"
+        ],
+        "varietyNames": [
+            "カイリキー",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0069",
+        "name_jp": "マダツボミ",
+        "name_eg": "Bellsprout"
+    },
+    {
+        "No": "0070",
+        "name_jp": "ウツドン",
+        "name_eg": "Weepinbell"
+    },
+    {
+        "No": "0071",
+        "name_jp": "ウツボット",
+        "name_eg": "Victreebel"
+    },
+    {
+        "No": "0072",
+        "name_jp": "メノクラゲ",
+        "name_eg": "Tentacool"
+    },
+    {
+        "No": "0073",
+        "name_jp": "ドククラゲ",
+        "name_eg": "Tentacruel"
+    },
+    {
+        "No": "0074",
+        "name_jp": "イシツブテ",
+        "name_eg": "Geodude",
+        "varieties": [
+            "10109",
+            "Geodude"
+        ],
+        "varietyNames": [
+            "イシツブテ",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0075",
+        "name_jp": "ゴローン",
+        "name_eg": "Graveler",
+        "varieties": [
+            "10110",
+            "Graveler"
+        ],
+        "varietyNames": [
+            "ゴローン",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0076",
+        "name_jp": "ゴローニャ",
+        "name_eg": "Golem",
+        "varieties": [
+            "10111",
+            "Golem"
+        ],
+        "varietyNames": [
+            "ゴローニャ",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0077",
+        "name_jp": "ポニータ",
+        "name_eg": "Ponyta",
+        "varieties": [
+            "10162",
+            "Ponyta"
+        ],
+        "varietyNames": [
+            "ポニータ",
+            "ガラル"
+        ]
+    },
+    {
+        "No": "0078",
+        "name_jp": "ギャロップ",
+        "name_eg": "Rapidash",
+        "varieties": [
+            "10163",
+            "Rapidash"
+        ],
+        "varietyNames": [
+            "ギャロップ",
+            "ガラル"
+        ]
+    },
+    {
+        "No": "0079",
+        "name_jp": "ヤドン",
+        "name_eg": "Slowpoke",
+        "varieties": [
+            "10164",
+            "Slowpoke"
+        ],
+        "varietyNames": [
+            "ヤドン",
+            "ガラル"
+        ]
+    },
+    {
+        "No": "0080",
+        "name_jp": "ヤドラン",
+        "name_eg": "Slowbro",
+        "varieties": [
+            "10071",
+            "10165",
+            "Slowbro"
+        ],
+        "varietyNames": [
+            "ヤドラン",
+            "メガシンカ",
+            "ガラル"
+        ]
+    },
+    {
+        "No": "0081",
+        "name_jp": "コイル",
+        "name_eg": "Magnemite"
+    },
+    {
+        "No": "0082",
+        "name_jp": "レアコイル",
+        "name_eg": "Magneton"
+    },
+    {
+        "No": "0083",
+        "name_jp": "カモネギ",
+        "name_eg": "Farfetchd",
+        "varieties": [
+            "10166",
+            "Farfetchd"
+        ],
+        "varietyNames": [
+            "カモネギ",
+            "ガラル"
+        ]
+    },
+    {
+        "No": "0084",
+        "name_jp": "ドードー",
+        "name_eg": "Doduo"
+    },
+    {
+        "No": "0085",
+        "name_jp": "ドードリオ",
+        "name_eg": "Dodrio"
+    },
+    {
+        "No": "0086",
+        "name_jp": "パウワウ",
+        "name_eg": "Seel"
+    },
+    {
+        "No": "0087",
+        "name_jp": "ジュゴン",
+        "name_eg": "Dewgong"
+    },
+    {
+        "No": "0088",
+        "name_jp": "ベトベター",
+        "name_eg": "Grimer",
+        "varieties": [
+            "10112",
+            "Grimer"
+        ],
+        "varietyNames": [
+            "ベトベター",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0089",
+        "name_jp": "ベトベトン",
+        "name_eg": "Muk",
+        "varieties": [
+            "10113",
+            "Muk"
+        ],
+        "varietyNames": [
+            "ベトベトン",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0090",
+        "name_jp": "シェルダー",
+        "name_eg": "Shellder"
+    },
+    {
+        "No": "0091",
+        "name_jp": "パルシェン",
+        "name_eg": "Cloyster"
+    },
+    {
+        "No": "0092",
+        "name_jp": "ゴース",
+        "name_eg": "Gastly"
+    },
+    {
+        "No": "0093",
+        "name_jp": "ゴースト",
+        "name_eg": "Haunter"
+    },
+    {
+        "No": "0094",
+        "name_jp": "ゲンガー",
+        "name_eg": "Gengar",
+        "varieties": [
+            "10038",
+            "10202",
+            "Gengar"
+        ],
+        "varietyNames": [
+            "ゲンガー",
+            "メガシンカ",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0095",
+        "name_jp": "イワーク",
+        "name_eg": "Onix"
+    },
+    {
+        "No": "0096",
+        "name_jp": "スリープ",
+        "name_eg": "Drowzee"
+    },
+    {
+        "No": "0097",
+        "name_jp": "スリーパー",
+        "name_eg": "Hypno"
+    },
+    {
+        "No": "0098",
+        "name_jp": "クラブ",
+        "name_eg": "Krabby"
+    },
+    {
+        "No": "0099",
+        "name_jp": "キングラー",
+        "name_eg": "Kingler",
+        "varieties": [
+            "10203",
+            "Kingler"
+        ],
+        "varietyNames": [
+            "キングラー",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0100",
+        "name_jp": "ビリリダマ",
+        "name_eg": "Voltorb",
+        "varieties": [
+            "10231",
+            "Voltorb"
+        ],
+        "varietyNames": [
+            "ビリリダマ",
+            "ヒスイ"
+        ]
+    },
+    {
+        "No": "0101",
+        "name_jp": "マルマイン",
+        "name_eg": "Electrode",
+        "varieties": [
+            "10232",
+            "Electrode"
+        ],
+        "varietyNames": [
+            "マルマイン",
+            "ヒスイ"
+        ]
+    },
+    {
+        "No": "0102",
+        "name_jp": "タマタマ",
+        "name_eg": "Exeggcute"
+    },
+    {
+        "No": "0103",
+        "name_jp": "ナッシー",
+        "name_eg": "Exeggutor",
+        "varieties": [
+            "10114",
+            "Exeggutor"
+        ],
+        "varietyNames": [
+            "ナッシー",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0104",
+        "name_jp": "カラカラ",
+        "name_eg": "Cubone"
+    },
+    {
+        "No": "0105",
+        "name_jp": "ガラガラ",
+        "name_eg": "Marowak",
+        "varieties": [
+            "10114",
+            "Marowak"
+        ],
+        "varietyNames": [
+            "ガラガラ",
+            "アローラ"
+        ]
+    },
+    {
+        "No": "0106",
+        "name_jp": "サワムラー",
+        "name_eg": "Hitmonlee"
+    },
+    {
+        "No": "0107",
+        "name_jp": "エビワラー",
+        "name_eg": "Hitmonchan"
+    },
+    {
+        "No": "0108",
+        "name_jp": "ベロリンガ",
+        "name_eg": "Lickitung"
+    },
+    {
+        "No": "0109",
+        "name_jp": "ドガース",
+        "name_eg": "Koffing"
+    },
+    {
+        "No": "0110",
+        "name_jp": "マタドガス",
+        "name_eg": "Weezing",
+        "varieties": [
+            "10167",
+            "Weezing"
+        ],
+        "varietyNames": [
+            "マタドガス",
+            "ガラル"
+        ]
+    },
+    {
+        "No": "0111",
+        "name_jp": "サイホーン",
+        "name_eg": "Rhyhorn"
+    },
+    {
+        "No": "0112",
+        "name_jp": "サイドン",
+        "name_eg": "Rhydon"
+    },
+    {
+        "No": "0113",
+        "name_jp": "ラッキー",
+        "name_eg": "Chansey"
+    },
+    {
+        "No": "0114",
+        "name_jp": "モンジャラ",
+        "name_eg": "Tangela"
+    },
+    {
+        "No": "0115",
+        "name_jp": "ガルーラ",
+        "name_eg": "Kangaskhan",
+        "varieties": [
+            "10039",
+            "Kangaskhan"
+        ],
+        "varietyNames": [
+            "ガルーラ",
+            "メガシンカ"
+        ]
+    },
+    {
+        "No": "0116",
+        "name_jp": "タッツー",
+        "name_eg": "Horsea"
+    },
+    {
+        "No": "0117",
+        "name_jp": "シードラ",
+        "name_eg": "Seadra"
+    },
+    {
+        "No": "0118",
+        "name_jp": "トサキント",
+        "name_eg": "Goldeen"
+    },
+    {
+        "No": "0119",
+        "name_jp": "アズマオウ",
+        "name_eg": "Seaking"
+    },
+    {
+        "No": "0120",
+        "name_jp": "ヒトデマン",
+        "name_eg": "Staryu"
+    },
+    {
+        "No": "0121",
+        "name_jp": "スターミー",
+        "name_eg": "Starmie"
+    },
+    {
+        "No": "0122",
+        "name_jp": "バリヤード",
+        "name_eg": "Mr-Mime",
+        "varieties": [
+            "10168",
+            "Mr-Mime"
+        ],
+        "varietyNames": [
+            "バリヤード",
+            "ガラル"
+        ]
+    },
+    {
+        "No": "0123",
+        "name_jp": "ストライク",
+        "name_eg": "Scyther"
+    },
+    {
+        "No": "0124",
+        "name_jp": "ルージュラ",
+        "name_eg": "Jynx"
+    },
+    {
+        "No": "0125",
+        "name_jp": "エレブー",
+        "name_eg": "Electabuzz"
+    },
+    {
+        "No": "0126",
+        "name_jp": "ブーバー",
+        "name_eg": "Magmar"
+    },
+    {
+        "No": "0127",
+        "name_jp": "カイロス",
+        "name_eg": "Pinsir",
+        "varieties": [
+            "10040",
+            "Pinsir"
+        ],
+        "varietyNames": [
+            "カイロス",
+            "メガシンカ"
+        ]
+    },
+    {
+        "No": "0128",
+        "name_jp": "ケンタロス",
+        "name_eg": "Tauros",
+        "varieties": [
+            "10250",
+            "10251",
+            "10252",
+            "Tauros"
+        ],
+        "varietyNames": [
+            "ケンタロス",
+            "コンバット種",
+            "ブレイズ種",
+            "ウォーター種"
+        ]
+    },
+    {
+        "No": "0129",
+        "name_jp": "コイキング",
+        "name_eg": "Magikarp"
+    },
+    {
+        "No": "0130",
+        "name_jp": "ギャラドス",
+        "name_eg": "Gyarados",
+        "varieties": [
+            "10041",
+            "Gyarados"
+        ],
+        "varietyNames": [
+            "ギャラドス",
+            "メガシンカ"
+        ]
+    },
+    {
+        "No": "0131",
+        "name_jp": "ラプラス",
+        "name_eg": "Lapras",
+        "varieties": [
+            "10204",
+            "Lapras"
+        ],
+        "varietyNames": [
+            "ラプラス",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0132",
+        "name_jp": "メタモン",
+        "name_eg": "Ditto"
+    },
+    {
+        "No": "0133",
+        "name_jp": "イーブイ",
+        "name_eg": "Eevee",
+        "varieties": [
+            "10205",
+            "Eevee"
+        ],
+        "varietyNames": [
+            "イーブイ",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0134",
+        "name_jp": "シャワーズ",
+        "name_eg": "Vaporeon"
+    },
+    {
+        "No": "0135",
+        "name_jp": "サンダース",
+        "name_eg": "Jolteon"
+    },
+    {
+        "No": "0136",
+        "name_jp": "ブースター",
+        "name_eg": "Flareon"
+    },
+    {
+        "No": "0137",
+        "name_jp": "ポリゴン",
+        "name_eg": "Porygon"
+    },
+    {
+        "No": "0138",
+        "name_jp": "オムナイト",
+        "name_eg": "Omanyte"
+    },
+    {
+        "No": "0139",
+        "name_jp": "オムスター",
+        "name_eg": "Omastar"
+    },
+    {
+        "No": "0140",
+        "name_jp": "カブト",
+        "name_eg": "Kabuto"
+    },
+    {
+        "No": "0141",
+        "name_jp": "カブトプス",
+        "name_eg": "Kabutops"
+    },
+    {
+        "No": "0142",
+        "name_jp": "プテラ",
+        "name_eg": "Aerodactyl",
+        "varieties": [
+            "10042",
+            "Aerodactyl"
+        ],
+        "varietyNames": [
+            "プテラ",
+            "メガシンカ"
+        ]
+    },
+    {
+        "No": "0143",
+        "name_jp": "カビゴン",
+        "name_eg": "Snorlax",
+        "varieties": [
+            "10206",
+            "Snorlax"
+        ],
+        "varietyNames": [
+            "カビゴン",
+            "キョダイマックス"
+        ]
+    },
+    {
+        "No": "0144",
+        "name_jp": "フリーザー",
+        "name_eg": "Articuno",
+        "varieties": [
+            "10169",
+            "Articuno"
+        ],
+        "varietyNames": [
+            "フリーザー",
+            "ガラル"
+        ]
+    },
+    {
+        "No": "0145",
+        "name_jp": "サンダー",
+        "name_eg": "Zapdos",
+        "varieties": [
+            "10170",
+            "Zapdos"
+        ],
+        "varietyNames": [
+            "サンダー",
+            "ガラル"
+        ]
+    },
+    {
+        "No": "0146",
+        "name_jp": "ファイヤー",
+        "name_eg": "Moltres",
+        "varieties": [
+            "10171",
+            "Moltres"
+        ],
+        "varietyNames": [
+            "ファイヤー",
+            "ガラル"
+        ]
+    },
+    {
+        "No": "0147",
+        "name_jp": "ミニリュウ",
+        "name_eg": "Dratini"
+    },
+    {
+        "No": "0148",
+        "name_jp": "ハクリュー",
+        "name_eg": "Dragonair"
+    },
+    {
+        "No": "0149",
+        "name_jp": "カイリュー",
+        "name_eg": "Dragonite"
+    },
+    {
+        "No": "0150",
+        "name_jp": "ミュウツー",
+        "name_eg": "Mewtwo",
+        "varieties": [
+            "10043",
+            "10044",
+            "Mewtwo"
+        ],
+        "varietyNames": [
+            "ミュウツー",
+            "メガシンカX",
+            "メガシンカY"
+        ]
+    },
+    {
+        "No": "0151",
+        "name_jp": "ミュウ",
+        "name_eg": "Mew"
+    }
+]
