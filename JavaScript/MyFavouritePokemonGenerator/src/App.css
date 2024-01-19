@@ -1,0 +1,811 @@
+#root {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+}
+
+header {
+  background-color: rgb(182, 54, 54);
+  color: white;
+  height: 120px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 35px;
+}
+
+.headerWrapper {
+  width: 690px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div {
+  font-size: 50px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  z-index: 100;
+}
+
+.iconImages {
+  width: 4%;
+}
+
+.pokeballCenter {
+  position: absolute;
+  width: 86px;
+  top: 107px;
+}
+
+/* Hamburger CSS  */
+
+.burger-menu {
+  background-color: #00c4cc;
+  border-radius: 10px;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  height: 60px;
+  width: 60px;
+}
+
+.closeMenu-icon {
+  background-color: #5d6060;
+  position: absolute;
+  bottom: -18%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+  z-index: 500;
+}
+
+.bar {
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.bar2 {
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.bar2:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 9px);
+}
+
+.bar2:nth-child(2) {
+  transform: rotate(-45deg) translate(8px, -7px);
+}
+
+.menu-content {
+  width: 100%;
+  height: 70%;
+  display: none;
+  background-color: #9c7070;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -100%; 
+  left: 0%; 
+  transition: top 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.open .menu-content {
+  display: block; 
+  display: flex;
+  z-index: 700;
+  top: 0;
+}
+
+.overlay {
+  width: 100%;
+  height: 30%;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: -100%; 
+  left: 0%;
+  transition: bottom 0.5s ease-in-out;
+  z-index: 10;
+  opacity: 0.6;
+}
+
+.open .overlay {
+  bottom: 0; 
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 70%;
+  text-align: left;
+  width: 700px;
+}
+
+.navbar > div {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  width: 700px;
+  height: 100%;
+}
+.backgroundImageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.backgroundImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.selectArea {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 1%;
+  padding-top: 1% ;
+  padding-bottom: 4%;
+  margin-top: 1% ;
+}
+
+input[type="text"] {
+  background-color:#fee3e3;
+  width: 90%; 
+  border: 2px solid #35444d;
+}
+
+.contactFormWrapper {
+  width: 700px;
+}
+
+.siteName {
+  display: flex;
+  width: 100%;
+    justify-content: center;
+  font-size: 25px;
+}
+
+option {
+  width: 20px;
+}
+
+.chooseNoOfPokemonContainer {
+  background-color: rgb(240, 147, 147);
+  padding: 2%;
+  border-radius: 20px;
+  margin-bottom: 4%;
+}
+
+.chosenNoOfPokemon {
+  margin: 3% 0;
+  font-size: 140%;
+}
+
+.pokemonDropdownContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(235, 180, 235);
+  padding: 2%;
+  border-radius: 20px;
+  margin-bottom: 4%;
+}
+
+.pokemonDropdowns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.pokemonDropdownEach {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  margin: 1% 1%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.pokemonDropdownStyles {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.pokemonDropdownEach > select {
+  width: 100%;
+}
+
+.pokeonDropdownColorStyle > input {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.notSelectedPokemon {
+  color: black;
+}
+
+.backgroundImage {
+  position: relative;
+}
+
+.backgroundImage2 {
+  width: 300px;
+}
+
+.selectedPokemonImagesOnBackground {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 77%;
+  width: 100%;
+  top: 15%;
+}
+
+/* Pokemon Image CSS */
+
+.pokemonImageFrameTop {
+  position: absolute;
+  top: -6%;
+  left: 0;
+  width: 100%;
+  height: 6%;
+  background-color: rgb(28, 0, 128);
+  border-radius: 10em 10em 0 0;
+}
+.pokemonImageFrameBottom {
+  position: absolute;
+  bottom: -6%;
+  left: 0;
+  width: 100%;
+  height: 6%;
+  background-color: rgb(28, 0, 128);
+  border-radius: 0 0 10em 10em;
+}
+
+/* One Pokemon Image */
+.selectedPokemonImagesOnBackgroundEachContainer_one {
+  width: 33%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  padding: 0.2%;
+}
+.pokemonImageEach_one {
+  width: 100%;
+}
+
+/* Two Pokemon Images  */
+.selectedPokemonImagesOnBackgroundEachContainer_two {
+  width: 33%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 4%
+}
+.pokemonImageEach_two {
+  width: 100%;
+}
+
+/* Three Pokemon Images  */
+.selectedPokemonImagesOnBackgroundEachContainer_three {
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 1%
+}
+.pokemonImageEach_three {
+  width: 100%;
+}
+
+/* Four Pokemo Images  */
+.selectedPokemonImagesOnBackgroundEachContainer_four {
+  width: 22%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 1%
+}
+.selectedPokemonImagesOnBackgroundEachContainer_four > img {
+  font-size: 20px;
+}
+.pokemonImageEach_four {
+  width: 100%;
+}
+
+/* Five and Six Pokemon Images */
+.selectedPokemonImagesOnBackgroundEachContainer_five_ {
+  width: 23%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 2.2% 2% 2.2% 2%
+}
+.selectedPokemonImagesOnBackgroundEachContainer_five_ > Img {
+  font-size: 21px;
+}
+.pokemonImageEach_five_ {
+  width: 100%;
+}
+
+/* Seven and Eight Pokemon Images  */
+.selectedPokemonImagesOnBackgroundEachContainer_seven_ {
+  width: 21%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 3%;
+}
+.selectedPokemonImagesOnBackgroundEachContainer_seven_ > img {
+  font-size: 19px;
+}
+.pokemonImageEach_seven_ {
+  width: 100%;
+}
+
+/* Nine and Ten Pokemon Images  */
+.selectedPokemonImagesOnBackgroundEachContainer_nine_ {
+  width: 17%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 5% 0.9% 3% 0.9%;
+}
+.selectedPokemonImagesOnBackgroundEachContainer_nine_ > img{
+  font-size: 15px;
+}
+.pokemonImageEach_nine_ {
+  width: 100%;
+}
+
+/* Eleven and Twelve Pokemon Images  */
+.selectedPokemonImagesOnBackgroundEachContainer_eleven_ {
+  width: 14.6%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 1.7% 3% 1% 3%
+}
+.selectedPokemonImagesOnBackgroundEachContainer_eleven_ > img {
+  font-size: 13px;
+}
+.pokemonImageEach_eleven_ {
+  width: 100%;
+  white-space: pre-line;
+}
+
+/* Thirteen Fourteen and FifteenPokemon Images  */
+.selectedPokemonImagesOnBackgroundEachContainer_thirteen__ {
+  width: 14.2%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 3% 2% 0.1% 2%
+}
+.selectedPokemonImagesOnBackgroundEachContainer_thirteen__ > img {
+  font-size: 12px;
+}
+.pokemonImageEach_thirteen__ {
+  width: 100%;
+  white-space: pre-line;
+}
+
+/* Sixteen, seventeen and eighteen Pokemon Images  */
+.selectedPokemonImagesOnBackgroundEachContainer_sixteen__ {
+  width: 14%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 3% 0.8% 0.1% 0.8%
+}
+.selectedPokemonImagesOnBackgroundEachContainer_sixteen__ > img {
+  font-size: 12px;
+}
+.pokemonImageEach_sixteen__ {
+  width: 100%;
+}
+
+.saveButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  border-radius: 20px;
+  margin-top: 4%;
+  height: 15vh
+}
+.saveButton {
+  height: 6vh;
+  width: 30%;
+  border-radius: 30px;
+}
+
+
+.headingOnBackgroundImage {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+  font-size: 260%;
+  -webkit-text-stroke: 1px #ffffff;
+  font-family: 'M PLUS 1p', sans-serif;
+
+}
+.headingSetting {
+  background-color: aquamarine;
+  padding: 2%;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+.headingExamples{
+  margin-top: 2%;
+  color: #494949;
+}
+
+.important {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.important a {
+  text-decoration: none;
+  color: rgb(245, 248, 247);
+}
+
+.important > div {
+  margin: 4px;
+    display: grid;
+  place-items: center;
+  width: 60%;
+}
+
+footer {
+  color: rgb(245, 248, 247);
+  height: 100px;
+  display: grid;
+  place-items: center;
+}
+
+footer > div {
+  font-size: 20px;
+}
+
+/* Shiny Button  */
+.switch__label {
+  width: 50%;
+  position: relative;
+  display: inline-block;
+}
+.switch__content {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  border-radius: 25px;
+  height: 22px;
+  overflow: hidden;
+}
+.switch__content:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+  top: 0;
+  left: 0;
+  border: 1.5px solid #E5E5EA;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.switch__content:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 30px;
+  -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+      -ms-transition: all .5s;
+       -o-transition: all .5s;
+          transition: all .5s;
+}
+.switch__input {
+  display: none;
+}
+.switch__circle {
+  display: block;
+  top: 0%;
+  left: 2%;
+  position: absolute;
+  -webkit-box-shadow: 0 2px 6px #999;
+          box-shadow: 0 2px 6px #999;
+  width: 50%;
+  height: 100%;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  background-color: #fff;
+  -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+      -ms-transition: all .5s;
+       -o-transition: all .5s;
+          transition: all .5s;
+}
+.switch__input:checked ~ .switch__circle {
+  left: 50%;
+}
+.switch__input:checked ~ .switch__content:after {
+  background-color: #00c4cc;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact Form CSS */
+.contactFormWrapper {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+.contactForm > input {
+  background-color:#fcf6f6;
+  margin-bottom: 30px;
+  width: 60%;
+}
+.sendButtonContainer {
+  display: grid;
+  place-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+.sendButton {
+  width: 280px;
+  font-size: 140%;
+  background-color: #00c4cc;
+  color: #ffffff;
+  border-radius: 40px;
+}
+.contactFormMessage {
+  border-radius: 10px;
+  background-color: #fcf6f6;
+}
+.responseContainer {
+width: 100%;
+background-color: #ffffff;
+display: flex;
+justify-content: center;
+
+margin-top: 10% ; 
+margin-bottom: 7%;
+}
+.response {
+width: 90%;
+font-size: 20px;
+}
+
+/* PrivatePolicy  */
+.dates {
+  width: 96%;
+  text-align: right;
+  font-size: 20px;
+}
+
+/* howTo */
+.HowToWrapper {
+  padding: 2%;
+}
+.howToImages {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* FAQs */
+.FAQWrapper {
+  margin-top: 8%;
+  padding: 3%;
+  background-color: #c9cece;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 700px) {
+  #root {
+    width: 100%;
+  }
+
+  .headerWrapper {
+    width: 90%;
+  }
+
+  header {
+    height: 16vw;
+    margin-bottom: 5%;
+  }
+
+  /* Hamburder CSS */
+  .iconImages {
+    width: 30px;
+    padding-left: 4vw ;
+  }
+  .bar {
+    height: 4px;
+  }
+  .bar2:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 9px);
+  }
+  .bar2:nth-child(2) {
+    transform: rotate(-45deg) translate(8px, -7px);
+  }
+  .menu-content {
+    width: 75%;
+    height: 100%;
+    top: 0;
+    left: -100%; 
+    transition: left 0.5s ease-in-out;
+  }
+  .open .menu-content {
+    left: 0;
+  }
+  .closeMenu-icon {
+    bottom: -28%;
+  }
+  .burger-menu {
+    border-radius: 2vw;
+  }
+  .menu-icon {
+    padding: 3vw;
+    height: 7vw;
+    width: 7vw;
+  }
+  .open .menu-icon {
+    padding: 3vw;
+    height: 7vw;
+    width: 7vw;
+  }
+  .overlay {
+    width: 25%;
+    height: 100%;
+    right: -30%; 
+    left: auto; 
+    bottom: 0;
+    transition: right 0.5s ease-in-out;
+  }
+  .open .overlay {
+    right: 0; 
+    left: auto; 
+  }
+  .navbar {
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+  }
+  .navbar > div {
+    font-size: 26px;
+  }
+
+  .pokeballCenter {
+    width: 14vw;
+    top: 13.7vw;
+  }
+
+  .siteName {
+    font-size: 3.4vw;
+  }
+
+  header > div {
+    font-size: 5.5vw;
+    padding-left: 5vw;
+  }
+  
+  .chooseNoOfPokemonContainer > label {
+    font-size: 3.5vw;
+  }
+
+  .selectedPokemonImagesOnBackground {
+
+    top: 13%;
+  }
+
+  .headingOnBackgroundImage {
+    top: 1.5%;
+  }
+
+  .chosenNoOfPokemon {
+    font-size: 5vw;
+  }
+
+  .pokemonDropdownStyles {
+    flex-direction: column;
+  }
+
+  .headingOnBackgroundImage {
+    font-size: 6vw;
+    -webkit-text-stroke: 1px #030303;
+  }
+
+  /* Pokemon Images Alt Styles  */
+  .selectedPokemonImagesOnBackgroundEachContainer_four > img {
+    font-size: 2.4vw;
+  }
+  .selectedPokemonImagesOnBackgroundEachContainer_five_ > img {
+    font-size: 2.4vw;
+  }
+  .selectedPokemonImagesOnBackgroundEachContainer_seven_ > img {
+    font-size: 2.2vw;
+  }
+  .selectedPokemonImagesOnBackgroundEachContainer_nine_ > img {
+    font-size: 1.7vw;
+  }
+  .selectedPokemonImagesOnBackgroundEachContainer_eleven_ > img {
+    font-size: 1.36vw;
+  }
+  .selectedPokemonImagesOnBackgroundEachContainer_thirteen__ > img {
+    font-size: 1.3vw;
+  }
+  .selectedPokemonImagesOnBackgroundEachContainer_sixteen__ > img {
+    font-size: 1.2vw;
+  }
+
+  .pokemonDropdownIsShinyButtonStyle {
+    font-size: 85%;
+  }
+
+  .container {
+    width: 100%;
+  } 
+
+  .switch__label {
+    width: 47px;
+  }
+
+  footer > div {
+    font-size: 3vw;
+  }
+}
