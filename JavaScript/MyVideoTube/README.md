@@ -36,7 +36,7 @@ In the end, I feel that this project is the best opportunity to practice both fr
 
 |Users can send me a message through 'Contact' form.|At 'Extra Videos', users can watch more dog and cat videos.|  
 |----|----|  
-|<img src="images/MyVideoTube041.png" width="400">|<img src="images/MyVideoTube05.png" width="400">|
+|<img src="images/MyVideoTube041.png" width="600">|<img src="images/MyVideoTube05.png" width="600">|
 
 |Users must be logged in to access all videos. Please use 'ExtraVideos' for both the username and password to log in.|Users can also create their accounts. Please note that the token will expire in 1 minute.|
 |----|----|
