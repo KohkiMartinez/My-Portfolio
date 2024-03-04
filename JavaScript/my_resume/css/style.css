@@ -36,7 +36,7 @@ body a:hover {
     background-color: rgb(9, 6, 162);
     height: 260px;
     /* margin: 1% 0; */
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     padding: .5% 4%;
     border-radius: 5px 5px 0 0;
 }
@@ -45,6 +45,7 @@ body a:hover {
 .contents {
     display: flex;
     padding: 0 4%;
+    padding-bottom: 3%;
     justify-content: space-between;
 }
 
@@ -127,7 +128,9 @@ aside li {
     flex-wrap: wrap;
 }
 
-
+.projectUrl {
+    font-size: 25px;
+}
 .projects {
     font-size: 18px;
 }
