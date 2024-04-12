@@ -5,7 +5,7 @@
 [Software Name] My Favourite Pokemon Generator   
 [System Requirement] Windows 10  
 [Version] 1.00  
-[Last updated] 09/01/2024                                           
+[Last updated] 12/04/2024                                           
 
 ----------------------------------------
 
@@ -71,6 +71,7 @@ I want many Pokemon fans to visit this web app. Instead of just creating their P
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0"
+    "typescript": "^5.4.4"
 ## Dev Dependencies
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
