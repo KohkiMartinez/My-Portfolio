@@ -3,9 +3,9 @@
 ----------------------------------------
 
 [Software Name] My Favourite Pokemon Generator   
-[System Requirement] Windows 10  
-[Version] 1.00  
-[Last updated] 12/04/2024                                           
+[System Requirement] Windows 10 or later  
+[Version] 2.02  
+[Last updated] 15/04/2024                                           
 
 ----------------------------------------
 
