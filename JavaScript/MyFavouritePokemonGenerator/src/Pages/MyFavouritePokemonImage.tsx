@@ -1,16 +1,17 @@
 // MyFavourtitePokemonImage.tsx
 
 import * as React from 'react';
-import html2canvas from 'html2canvas';
 import { ChangeEvent } from 'react';
-
-import Data from '../Json/scrapedData.json';
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
 
 import type { PokemonData2 } from '../Types/PokemonData2';
 import type { SelectedImageFrameColors } from '../Types/SelectedImageFrameColors';
 
+import useScreenshot from '../hooks/useScreenshot'
+import useHandleSubmit from '../hooks/useHandleSubmit';
+
+import Data from '../Json/scrapedData.json';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 import NumOfPokemon from '../Components/NumOfPokemon';
 import PokemonDropdown from '../Components/PokemonDropdown';
 import AddingPhrase from '../Components/AddingPhrase';
@@ -25,22 +26,8 @@ type SelectedPokemon = {
     shownPokemonName: string
   };
 };
-type FetchData = {
-  sprites: {
-    other: {
-      'official-artwork': {
-        front_default: string,
-        front_shiny: string
-      };
-    };
-  };
-};
-type ImageData = {
-  front_default: string,
-  front_shiny: string
-};
 
-const Shodai: React.FC = () => {
+const Shodai: React.FC = React.memo(() => {
 
   const [selectedOption, setSelectedOption] = React.useState<number>(0);
   const options: string[] = [
@@ -95,7 +82,8 @@ const Shodai: React.FC = () => {
   };
 
   // adding pokemon Images
-  const elements: React.ReactNode[] = [];
+  // const elements: React.ReactNode[] = [];
+  const [elements, setElements] = React.useState<JSX.Element[]>([]);
   const [selectedImagesColor, setSelectedImagesColor] = React.useState<string>('#1c0080');
 
   // Image frame color
@@ -326,6 +314,16 @@ const Shodai: React.FC = () => {
     }
   });
 
+  // Changing each Image frame Color
+  const handleImageFrameColorChange = (index: number) => async(e: ChangeEvent<HTMLInputElement>): Promise<void> => {
+    setSelectedImageFrameColors(prevData => ({
+      ...prevData,
+      [index]: {
+        imageFrameColor: e.target.value
+      }
+    }));
+  };
+
   // Changing All Images Frame Color
   const handleAllImagesFrameColorChange = async(e: ChangeEvent<HTMLInputElement>): Promise<void> => {
     setSelectedImagesColor(e.target.value);
@@ -340,152 +338,62 @@ const Shodai: React.FC = () => {
     };
   };
 
-  // Changing each Image frame Color
-  const handleImageFrameColorChange = (index: number) => async(e: ChangeEvent<HTMLInputElement>): Promise<void> => {
-    setSelectedImageFrameColors(prevData => ({
-      ...prevData,
-      [index]: {
-        imageFrameColor: e.target.value
-      }
-    }));
-  };
+  const { handleSubmit } = useHandleSubmit(setSelectedPokemon, setPokemonData2);
 
-  const handleSubmit2 = (index: number) => async(e: ChangeEvent<HTMLSelectElement>): Promise<void> => {
-    setSelectedPokemon(prevData => ({
-      ...prevData,
-      [index]: {
-        shownPokemonName: e.target.value
-      }
-    }));
-
-    try {
-        const response: Response = await fetch(`https://pokeapi.co/api/v2/pokemon/${e.target.value.toLocaleLowerCase()}`);
-        const data: FetchData = await response.json();
-
-        if (data.sprites !== undefined) {
-          const imageData: ImageData = data.sprites.other['official-artwork']
-          setPokemonData2(prevData=> ({
-            ...prevData,
-            [index]: {
-              sprites: imageData.front_default,
-              shiny: imageData.front_shiny,
-              isShiny: pokemonData2[index].isShiny,
-              border: '1.9px solid rgb(4, 113, 4)'
-            }
-          }));
-        } else {
-          setPokemonData2(prevData => ({
-            ...prevData,
-            [index]: {
-              sprites: '',
-              shiny: '',
-              isShiny: false,
-              border: '1px solid rgb(221, 75, 221)'
-            }
-          }));
-        }
-    } catch(err) {
-        console.log('Error fetching Pokemon: ', err);
-        setPokemonData2( prevData => ({
-          ...prevData,
-          [index]: {
-            sprites: '',
-            shiny: '',
-            isShiny: false,
-            border: '1px solid rgb(221, 75, 221)'
-          }
-        }));
-    }
-  }
-
-  for (let i = 0; i < +selectedOption; i++) {
-    elements.push(
-    <div key={i} className={`pokemonDropdownEach pokemonDropdownEach${i}`}
-      style={{ border: pokemonData2[i].border }}>
-
-      <label htmlFor={`selectPokemonDropdown${i}`}>Pokemon {i + 1} </label>
-      <select id={`selectPokemonDropdown${i}`} value={selectedPokemon[i].shownPokemonName} 
-        onChange={handleSubmit2(i)}>
-        <option value="" className='notSelectedPokemon'>Choose Pokemon</option> 
-          {Data.map((d, index) => (
-            <option key={index} value={d.name_eg}>
-              No:{d.No} {d.name_jp}
-            </option>
-          ))}
-      </select>
-
-      <div className='pokemonDropdownStyles'>
-        <div className='pokeonDropdownColorStyle'>
-          <label htmlFor={`headerFrameColorInput${i}`}>Choose colour: </label>
-          <input 
-            type='color'
-            id={`headerFrameColorInput${i}`}
-            value={selectedImageFrameColors[i].imageFrameColor}
-            onChange={handleImageFrameColorChange(i)}
-          />
-        </div>
-
-        <div className='pokemonDropdownIsShinyButtonStyle'>
-          {pokemonData2[i].shiny ? (
-          <>
-            <div>ShinyButton</div>
-            <label className="switch__label">
-              <input type="checkbox" className="switch__input" onChange={() => handleShiny(i)}/>
-              <span className="switch__content"></span>
-              <span className="switch__circle"></span>
-            </label>
-          </>
-        ): (
-          <div></div>
-        )}
+  // Creating Elements
+  React.useEffect(() => {
+    const NewElements = [];
+    for (let i = 0; i < +selectedOption; i++) {
+      NewElements.push(
+      <div key={i} className={`pokemonDropdownEach pokemonDropdownEach${i}`}
+        style={{ border: pokemonData2[i].border }}>
+  
+        <label htmlFor={`selectPokemonDropdown${i}`}>Pokemon {i + 1} </label>
+        <select id={`selectPokemonDropdown${i}`} value={selectedPokemon[i].shownPokemonName}
+          onChange={(e) => handleSubmit(i, pokemonData2[i], e)} >
+            
+          <option value="" className='notSelectedPokemon'>Choose Pokemon</option> 
+            {Data.map((d, index) => (
+              <option key={index} value={d.name_eg}>
+                No:{d.No} {d.name_jp}
+              </option>
+            ))}
+        </select>
+  
+        <div className='pokemonDropdownStyles'>
+          <div className='pokeonDropdownColorStyle'>
+            <label htmlFor={`headerFrameColorInput${i}`}>Choose colour: </label>
+            <input 
+              type='color'
+              id={`headerFrameColorInput${i}`}
+              value={selectedImageFrameColors[i].imageFrameColor}
+              onChange={handleImageFrameColorChange(i)}
+            />
+          </div>
+  
+          <div className='pokemonDropdownIsShinyButtonStyle'>
+            {pokemonData2[i].shiny ? (
+            <>
+              <div>ShinyButton</div>
+              <label className="switch__label">
+                <input type="checkbox" className="switch__input" onChange={() => handleShiny(i)}/>
+                <span className="switch__content"></span>
+                <span className="switch__circle"></span>
+              </label>
+            </>
+          ): (
+            <div></div>
+          )}
+          </div>
         </div>
       </div>
-    </div>
-    );
-  }
-
-  // screenshot a final image
-  const handleScreenshot = React.useCallback
-  (async(e: React.MouseEvent<HTMLButtonElement, MouseEvent>): Promise<void> => 
-  {
-    e.preventDefault();
-    const targetElement: HTMLElement | null = document.getElementById('screenshotTarget');
-
-    if (targetElement) {
-      try {
-
-        const scale: number = 6;
-          
-        const canvas: HTMLCanvasElement = await html2canvas(targetElement, {
-          scale: scale,
-          allowTaint: true,
-          useCORS: true,
-        });
-
-        const enlargedCanvas: HTMLCanvasElement = document.createElement('canvas');
-        const context: CanvasRenderingContext2D | null = enlargedCanvas.getContext('2d');
-        if (context) {
-          enlargedCanvas.width = canvas.width * scale; 
-          enlargedCanvas.height = canvas.height * scale; 
-          context.drawImage(canvas, 0, 0, enlargedCanvas.width, enlargedCanvas.height);
-        } else {
-          console.error('2D rendering context is null');
-        }    
-
-        const imageDataURL: string = canvas.toDataURL('image/png');
-        const downloadLink: HTMLAnchorElement = document.createElement('a');
-        downloadLink.href = imageDataURL;
-        downloadLink.download = 'pokemonImage.png';
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-        
-      } catch(err) {
-        console.error('Error capturing screenshot', err);
-        alert(err);
-      }
+      );
     }
-  }, [])
+    setElements(NewElements)
+  }, [selectedOption, pokemonData2, selectedPokemon, selectedImageFrameColors])
+  
+  // screenshot a final image
+  const { handleScreenshot } = useScreenshot();
  
     return (
 
@@ -550,6 +458,6 @@ const Shodai: React.FC = () => {
         </div>
     </main>
     );
-};
+});
     
 export default Shodai
