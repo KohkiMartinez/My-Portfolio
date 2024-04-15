@@ -13,15 +13,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<MyFavouritePokemonImage />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/privacypolicy' element={<PrivacyPolicy />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/howto' element={<HowTo />} />
-      </Routes>
-    </BrowserRouter>
-
+        <Routes>
+          <Route path='/' element={<MyFavouritePokemonImage />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/privacypolicy' element={<PrivacyPolicy />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/howto' element={<HowTo />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
