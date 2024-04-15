@@ -1,11 +1,11 @@
 // FAQ.tsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const FAQ: React.FC<{
 }> = React.memo(() => 
 {
-    console.log('FAQ');
     return (
         <div className='FAQWrapper'>
             <h2>よくあるご質問 (FAQ)</h2>

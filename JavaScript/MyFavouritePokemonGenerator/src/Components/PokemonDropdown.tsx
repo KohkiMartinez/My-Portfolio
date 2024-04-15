@@ -1,4 +1,5 @@
 // PokemonDropdown.tsx
+
 import React from 'react';
 import { ChangeEvent } from 'react';
 
@@ -8,7 +9,6 @@ const PokemonDropdown: React.FC<{
     elements: React.ReactNode[]
 }> = React.memo(({ selectedImagesColor, handleAllImagesFrameColorChange, elements }) => 
 {
-
     return (
         <div className='pokemonDropdownContainer'>
             <div>

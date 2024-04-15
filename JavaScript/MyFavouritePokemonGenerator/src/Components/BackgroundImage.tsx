@@ -23,7 +23,6 @@ const BackgroundImage: React.FC<{
     writing
  }) => 
 {
-
     return (
 
         <div className='backgroundImageContainer'>
@@ -50,7 +49,7 @@ const BackgroundImage: React.FC<{
                             </div>
                         ))};
                     </>
-                )};
+                )}
 
                 {selectedOption > 0 && selectedOption === 2 && (
                     <>
@@ -72,7 +71,7 @@ const BackgroundImage: React.FC<{
                             </div>
                         ))};
                     </>
-                )};
+                )}
 
                 {selectedOption > 0 && selectedOption === 3 && (
                     <>
@@ -94,7 +93,7 @@ const BackgroundImage: React.FC<{
                             </div>
                         ))};
                     </>
-                )};
+                )}
 
                 {selectedOption > 0 && selectedOption === 4 && (
                     <>
@@ -116,7 +115,7 @@ const BackgroundImage: React.FC<{
                             </div>
                         ))};
                     </>
-                )};
+                )}
 
                 {selectedOption > 0 && (selectedOption === 6 || selectedOption === 5) && (
                     <>
@@ -138,7 +137,7 @@ const BackgroundImage: React.FC<{
                             </div>
                         ))};
                     </>
-                )};
+                )}
 
                 {selectedOption > 0 && (selectedOption === 8 || selectedOption === 7) && (
                     <>
@@ -160,7 +159,7 @@ const BackgroundImage: React.FC<{
                             </div>
                         ))};
                     </>
-                )};
+                )}
 
                 {selectedOption > 0 && (selectedOption === 9 || selectedOption === 10) && (
                     <>
@@ -182,7 +181,7 @@ const BackgroundImage: React.FC<{
                             </div>
                         ))};
                     </>
-                )};
+                )}
 
                 {selectedOption > 0 && (selectedOption === 11 || selectedOption === 12) && (
                     <>
@@ -204,7 +203,7 @@ const BackgroundImage: React.FC<{
                             </div>
                         ))};
                     </>
-                )};
+                )}
 
                 {selectedOption > 0 && (selectedOption === 13 || selectedOption ===14 || selectedOption === 15) && (
                     <>
@@ -226,7 +225,7 @@ const BackgroundImage: React.FC<{
                             </div>
                         ))};
                     </>
-                )};
+                )}
 
                 
                 {selectedOption > 0 && (selectedOption === 16 || selectedOption === 17 || selectedOption === 18) && (
@@ -249,7 +248,7 @@ const BackgroundImage: React.FC<{
                             </div>
                         ))};
                     </>
-                )};
+                )}
                 </div>
 
                 <div className='headingOnBackgroundImage' 
@@ -258,7 +257,7 @@ const BackgroundImage: React.FC<{
                         WebkitTextStroke: `${selectHeaderFrameWidth}px ${selectedHeaderFrameColor}`
                     }}
                     >
-                    {writing};
+                    {writing}
                 </div>
 
             </div>
