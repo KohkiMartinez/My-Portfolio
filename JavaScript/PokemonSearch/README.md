@@ -3,9 +3,9 @@
 ----------------------------------------
 
 [Software Name] Pokemon Search   
-[System Requirement] Windows 10  
-[Version] 1.00  
-[Last updated] 07/01/2024                                           
+[System Requirement] Windows 10 or later  
+[Version] 2.00  
+[Last updated] 20/04/2024                                           
 
 ----------------------------------------
 
@@ -65,10 +65,11 @@ Instead of providing a separate link for 'My Favorite Pokemon Generator', integr
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.16.0",
+    "typescript": "^5.4.5"
 ## Dev Dependencies
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
     "@vitejs/plugin-react": "^4.0.1",
     "eslint": "^8.44.0",
     "eslint-plugin-react": "^7.32.2",
