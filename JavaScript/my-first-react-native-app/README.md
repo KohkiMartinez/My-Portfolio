@@ -1,11 +1,11 @@
-# my-first-react-native-app
+# React Native Memo app
 
 ----------------------------------------
 
-[Software Name] my-first-react-native-app(Memo app)  
+[Software Name] React Native Memo app  
 [System Requirement] Windows 10  
 [Version] 1.00  
-[Last updated] 9/05/2023  
+[Last updated] 9/05/2024  
 
 ----------------------------------------
 
