@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "オンリーワン",
+    "slug": "onlyOne",
+    "version": "1.15",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash2.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "buildNumber": "1.15",
+      "icon": "./assets/icon4.png",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.github.maki.onlyOne"
+    },
+    "android": {
+      "versionCode": 15,
+      "package": "com.github.maki.onlyOne",
+      "icon": "./assets/icon4.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon4.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "280003ae-ea0d-412c-b4f1-df63e04b813e"
+      }
+    }
+  }
+}

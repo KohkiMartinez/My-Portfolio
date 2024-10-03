@@ -1,0 +1,22 @@
+{
+  "cli": {
+    "version": ">= 11.0.3",
+    "requireCommit": true
+  },
+  "build": {
+    "development": {
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
