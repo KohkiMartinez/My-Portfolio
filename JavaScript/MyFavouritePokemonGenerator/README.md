@@ -1,4 +1,4 @@
-# My Favourite Pokemon Generator
+# Full-stack web application (My Favourite Pokemon Generator)
 
 ---
 
@@ -19,7 +19,8 @@ This is a full-stack web application built with MongoDB, Express.js, React.js, a
 
 English Version: https://portfolio-myfavourite-pokemongenerator.pages.dev/  
 Japanese Version : https://pkmnbox.pages.dev/main  
-※ When download image from 'pokemon image generator' page, please use Safari not google chrome for any iOS devices. There are no issues with Android phones or PC.
+※ Please log in by typing 'kohki.martinez@gmail.com' into the input box and then pressing Enter. (https://pkmnbox.pages.dev/myPage)
+※ For downloading images from the 'Pokemon Image Generator' page, please use Safari instead of Google Chrome on iOS devices. There are no issues with Android phones or PCs.
 
 # About this project
 
