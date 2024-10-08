@@ -1,4 +1,4 @@
-# Full-stack web application (My Favourite Pokemon Generator)
+# ReactNative Application (RSS Reader)
 
 ---
 
